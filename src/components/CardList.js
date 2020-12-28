@@ -18,13 +18,14 @@ const CardList = () => {
     
     });
 
+//api
     useEffect(()=>{
         fetch( 'https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json',{method:"GET"})
           .then(res => res.json())
           .then(
             (data) => {                
-              const [card] =  data.result.records;
-              //為什麼這邊不能加 this?
+              const card =  data.result.records[1];
+              
               setState({
                 // items: data.result.records
                 image: card.Picture1,
