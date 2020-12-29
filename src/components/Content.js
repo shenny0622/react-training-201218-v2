@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
+import Card from './Card';
 
 class Content extends Component {
     render() {
@@ -7,12 +7,10 @@ class Content extends Component {
             <div className="main">
                 <h2 className="title-main">請先選擇區域</h2>
                 <ul className="list">
-                    <CardList/>
-                    <CardList/>
-                    <CardList/>
-                    <CardList/>
-                    <CardList/>
-                    <CardList/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </ul>
             </div>
         );

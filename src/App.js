@@ -5,7 +5,7 @@ import List from './components/List';
 import Dropdown from './components/Dropdown';
 import Pagination from './components/Pagination';
 // import CardList from './components/CardList';
-import Content from './components/Content';
+import Content from './components/CardsContent';
 
 function App() {
   return (
